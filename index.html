@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Canteen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="batch"></div>
+        <h1>UNIVERSITY CANTEEN</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="exps28800_UG143377D12_18_1b_RMS.jpg" alt="Burger">
+                    <h3>Burger</h3>
+                    <p>Price: ₹25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="OIP (2).jpeg" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <p>Price: ₹70</p>
+                </div>
+                <div class="menu-item">
+                    <img src="thumb-1920-1308370.jpg" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <p>Price: ₹20</p>
+                </div>
+                <div class="menu-item">
+                    <img src="OIP (3).jpeg" alt="Cold Coffee">
+                    <h3>Cold Coffee</h3>
+                    <p>Price: ₹40</p>
+                </div>
+                <div class="menu-item">
+                    <img src="5bd3a3027c65045b93886002d2c788bf.jpg" alt="Chowmein">
+                    <h3>Chowmein</h3>
+                    <p>Price: ₹40</p>
+                </div>
+                <div class="menu-item">
+                    <img src="R.jpeg" alt="Momos">
+                    <h3>Momos</h3>
+                    <p>Price: ₹40</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Order Your Food</h2>
+            <form id="orderForm">
+                <label for="foodItem">Select Food Item:</label>
+                <select id="foodItem" required>
+                    <option value="">--Select--</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="Cold Coffee">Cold Coffee</option>
+                    <option value="Chowmein">Chowmein</option>
+                    <option value="Momos">Momos</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" required>
+                    <option value="">--Select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="block">Select Your Block:</label>
+                <select id="block" required>
+                    <option value="">--Select--</option>
+                    <option value="E1">E1</option>
+                    <option value="E2">E2</option>
+                    <option value="E3">E3</option>
+                    <option value="E4">None</option>
+                </select>
+
+                <label for="roomNo">Room No:</label>
+                <input type="text" id="roomNo" required>
+
+                <label for="studentName">Your Name:</label>
+                <input type="text" id="studentName" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="th.jpeg" alt="Delicious Food">
+                <img src="OIP.jpeg" alt="Tasty Dish">
+                <img src="download.jpeg" alt="Canteen Meal">
+                <img src="OIP (1).jpeg" alt="Special Item">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: bbbites@college.edu</p>
+            <p>Phone: 9999999999</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BB Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
