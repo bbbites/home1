@@ -71,6 +71,9 @@
                     <option value="Momos">Momos</option>
                 </select>
 
+                <label for="extraItem">Add More Food Item:</label>
+                <input type="text" id="extraItem" placeholder="Eg. 1 pizza (optional)">
+
                 <label for="quantity">Quantity:</label>
                 <select id="quantity" required>
                     <option value="">--Select--</option>
@@ -86,22 +89,35 @@
                     <option value="E1">E1</option>
                     <option value="E2">E2</option>
                     <option value="E3">E3</option>
-                    <option value="E1">W1</option>
-                    <option value="E2">W2</option>
-                    <option value="E3">W3</option>
-                    <option value="E4">None</option>
+                    <option value="W1">W1</option>
+                    <option value="W2">W2</option>
+                    <option value="W3">W3</option>
+                    <option value="None">None</option>
                 </select>
-                <label for="block">Write a Delivery Location:</label>
-                <input type="text" notrequired id="location" placeholder="Eg.Wpark"></select>
+
+                <label for="location">Write a Delivery Location (optional):</label>
+                <input type="text" id="location" placeholder="Eg. Wpark">
 
                 <label for="roomNo">Room No:</label>
-                <input type="text" id="roomNo" placeholder="Eg.204" required>
+                <input type="text" id="roomNo" placeholder="Eg. 204" required>
 
                 <label for="studentName">Your Name:</label>
-                <input type="text" id="studentName" placeholder="Eg.XYZ" required>
+                <input type="text" id="studentName" placeholder="Eg. XYZ" required>
 
                 <button type="submit">Place Order</button>
             </form>
+
+            <!-- Live Order Summary -->
+            <div id="orderSummary">
+                <h3>Live Order Summary</h3>
+                <p><strong>Food Item:</strong> <span id="summaryFood">None</span></p>
+                <p><strong>Extra Items:</strong> <span id="summaryExtra">None</span></p>
+                <p><strong>Quantity:</strong> <span id="summaryQuantity">0</span></p>
+                <p><strong>Block:</strong> <span id="summaryBlock">None</span></p>
+                <p><strong>Location:</strong> <span id="summaryLocation">-</span></p>
+                <p><strong>Room No:</strong> <span id="summaryRoom">-</span></p>
+                <p><strong>Name:</strong> <span id="summaryName">-</span></p>
+            </div>
         </section>
 
         <section id="gallery">
